@@ -1,0 +1,27 @@
+@use "src/scss/colors" as colors;
+@use "src/scss/mixins" as mixins;
+
+.Header {
+    text-align: center;
+
+    h1 {
+        font-size: 80px;
+        color: #FFF;
+        margin: 25vh 0 0 0;
+    }
+
+    .icon-row {
+        display: flex;
+        justify-content: center;
+
+        svg {
+            width: 32px;
+            height: 32px;
+            color: colors.$light_blue;
+
+            &:not(:first-child), &:not(:last-child) {
+                margin: 0 32px;
+            }
+        }
+    }
+}

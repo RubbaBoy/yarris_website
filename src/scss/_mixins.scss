@@ -1,0 +1,35 @@
+// For very small devices
+@mixin small {
+    @media (max-width: 599px) { @content; }
+}
+
+// Tablets in portrait and bigger
+@mixin tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+}
+
+// Tablets in landscape and bigger
+@mixin tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+}
+
+// Normal desktops and bigger
+@mixin desktop {
+    @media (min-width: 1200px) { @content; }
+}
+
+// Large desktops and bigger
+@mixin large-desktop {
+    @media (min-width: 1800px) { @content; }
+}
+
+$max-width: 800px;
+
+@mixin content-width {
+    width: 100%;
+    max-width: 100%;
+
+    @include desktop {
+        max-width: $max-width;
+    }
+}

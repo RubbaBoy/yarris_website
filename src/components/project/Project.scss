@@ -1,0 +1,64 @@
+@use "src/scss/colors" as colors;
+@use "src/scss/mixins" as mixins;
+
+.Project {
+    max-width: 800px;
+    color: colors.$title;
+
+    border: 2px solid colors.$pink;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 30px 0;
+
+    transition: opacity 500ms ease-in 300ms;
+    opacity: 0;
+
+    .title-line {
+        font-size: 32px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+
+        h4 {
+            margin: 0 20px 0 0;
+            display: inline-block;
+
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 37px;
+        }
+
+        .languages {
+            display: inline-flex;
+
+            .language {
+                color: colors.$title-muted;
+                font-size: 18px;
+
+                &:not(:last-child):after {
+                    content: "\2219";
+                    margin: 0 10px;
+                }
+            }
+        }
+
+        .icon {
+            margin-left: auto;
+            color: colors.$title-muted;
+            transition: opacity 100ms ease-in;
+            opacity: 0;
+        }
+    }
+
+    &:hover {
+        .icon {
+            transition: opacity 250ms ease-out;
+            opacity: 1;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+}

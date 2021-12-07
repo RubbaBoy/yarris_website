@@ -1,0 +1,38 @@
+@use "src/scss/colors" as colors;
+@use "src/scss/mixins" as mixins;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+
+  background: colors.$dark_blue;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-wrapper {
+  align-self: center;
+  justify-self: center;
+
+  display: block;
+  flex: 1 0 auto;
+
+  @include mixins.content-width;
+
+}
+
