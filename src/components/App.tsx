@@ -5,6 +5,7 @@ import ProjectComponent, {Project} from "./project/Project";
 
 export default class App extends React.Component {
     private projectsRef: RefObject<HTMLDivElement> = createRef()
+    private arrowsRef: RefObject<HTMLDivElement> = createRef()
 
     state = {
         projects: [] as Project[]
@@ -25,8 +26,8 @@ export default class App extends React.Component {
                             developer at <a href="https://witr.rit.edu/" target="_blank" rel="noreferrer">WITR</a>.
                         </p>
                     </div>
-                    <div className="scroll-container">
-                        <svg className="arrows">
+                    <div ref={this.arrowsRef} className="scroll-container">
+                        <svg className="arrows" onClick={() => this.scrollDown()}>
                             <path className="a1" d="M0 0 L30 32 L60 0"/>
                             <path className="a2" d="M0 20 L30 52 L60 20"/>
                             <path className="a3" d="M0 40 L30 72 L60 40"/>
@@ -63,5 +64,16 @@ export default class App extends React.Component {
         } else if (scrolling < offset) {
             this.projectsRef.current?.classList.remove('showing')
         }
+    }
+
+    scrollDown() {
+        let arrows = this.arrowsRef?.current
+        let top1 = arrows?.offsetTop ?? 0
+        let top2 = arrows?.clientHeight ?? 0
+        console.log(top1 + " " + top2);
+        window.scroll({
+            top: top1 + top2,
+            behavior: 'smooth'
+        })
     }
 }

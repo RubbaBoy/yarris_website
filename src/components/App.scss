@@ -7,7 +7,7 @@
 
     p {
         padding: 24px 0;
-        color: colors.$title;
+        color: colors.$body-text;
 
         a {
             text-decoration: none;
@@ -21,17 +21,22 @@
 }
 
 .scroll-container {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 50px;
+    cursor: pointer;
+
     .arrows {
         width: 60px;
         height: 72px;
-        position: absolute;
-        left: 50%;
-        margin-left: -30px;
-        bottom: 50px;
+        position: relative;
     }
 
     .arrows path {
-        stroke: colors.$light_blue;
+        stroke: colors.$light-blue;
         fill: transparent;
         stroke-width: 1px;
         animation: arrow 2s infinite;

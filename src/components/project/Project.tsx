@@ -53,7 +53,7 @@ export default class ProjectComponent extends React.Component<ProjectProps> {
     }
 
     icon(href: string | undefined, type: LinkType) {
-        if (href == undefined) {
+        if (href === undefined) {
             return
         }
 

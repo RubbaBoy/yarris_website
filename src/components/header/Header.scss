@@ -7,7 +7,15 @@
     h1 {
         font-size: 80px;
         color: #FFF;
-        margin: 25vh 0 8px 0;
+        //margin: 25vh 0 8px 0;
+
+        margin-bottom: 8px;
+
+        margin-top: 25vh;
+
+        @include mixins.small {
+            margin-top: 10vh;
+        }
     }
 
     .icon-row {
