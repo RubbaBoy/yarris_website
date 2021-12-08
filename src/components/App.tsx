@@ -3,7 +3,6 @@ import Header from "./header/Header";
 import './App.scss'
 import ProjectComponent, {Project} from "./project/Project";
 
-
 export default class App extends React.Component {
     projects: Project[] = [
         new Project('MS Paint IDE',
