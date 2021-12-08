@@ -49,15 +49,26 @@
         }
 
         .icon {
-            margin-left: auto;
-            color: colors.$pink;
-            transition: opacity 100ms ease-in, color 300ms ease-in;
-            opacity: 0;
-            cursor: pointer;
+            &:first-of-type {
+                margin-left: auto;
+            }
+
+            &:not(:first-of-type) {
+                margin-left: 8px;
+            }
+
+            svg {
+                color: colors.$pink;
+                transition: opacity 100ms ease-in, color 300ms ease-in;
+                opacity: 0;
+                cursor: pointer;
+            }
 
             &:hover {
-                transition: color 100ms ease-out;
-                color: colors.$pink-secondary;
+                svg {
+                    transition: color 100ms ease-out;
+                    color: colors.$pink-secondary;
+                }
             }
         }
 
@@ -73,8 +84,10 @@
 
     &:hover {
         .icon {
-            transition: opacity 250ms ease-out;
-            opacity: 1;
+            svg {
+                transition: opacity 250ms ease-out;
+                opacity: 1;
+            }
         }
     }
 

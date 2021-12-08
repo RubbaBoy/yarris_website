@@ -1,0 +1,122 @@
+[
+  {
+    "name": "MS Paint IDE",
+    "languages": [
+      "Java",
+      "JavaScript",
+      "C#",
+      "HTML",
+      "SCSS",
+      "PHP"
+    ],
+    "description": "A program to use a custom OCR (NewOCR) to read images and parse them as code, performing IDE actions including compilation, syntax highlighting, buildsystem support, basic refactoring, LSP integration, and Google Assistant support.",
+    "github": "https://github.com/MSPaintIDE/MSPaintIDE",
+    "website": "https://ms-paint-i.de/"
+  },
+  {
+    "name": "Craftathon",
+    "languages": [
+      "Java"
+    ],
+    "description": "Lead the team at the charity organization Craftathon, raising $7,600 for children in domestic violence homes and shelters.",
+    "website": "https://craftathon.org/"
+  },
+  {
+    "name": "HolySheet",
+    "languages": [
+      "Dart",
+      "Java",
+      "HTML",
+      "SCSS"
+    ],
+    "description": "Developed an unlimited cold file storage system by efficiently encoding them into Google Sheets. This is serverless and highly scaleable with Docker & Kubernetes, hosted on AWS. The system is accessible through a file browser web app, native desktop app, CLI, REST API, gRPC API, and Java API.",
+    "github": "https:/github.com/HolySheet/HolySheet"
+  },
+  {
+    "name": "NewOCR",
+    "languages": [
+      "Java"
+    ],
+    "description": "Constructed an OCR from scratch, with 98+% accuracy on all printable ASCII characters on trained fonts. Designed to read computer-generated text of an arbitrary size on a trained font, and provide typeset data used to reconstruct the input image with modified text. This project cited several research papers on similar technology to make a unique detection system.",
+    "github": "https://github.com/MSPaintIDE/NewOCR",
+    "website": "https://wiki.newocr.dev/"
+  },
+  {
+    "name": "BYOB",
+    "languages": [
+      "TypeScript"
+    ],
+    "description": "A GitHub Action and service to allow for dynamically updated README badges from GitHub Action triggers.",
+    "github": "https://github.com/RubbaBoy/BYOB",
+    "website": "https://github.com/marketplace/actions/bring-your-own-badge"
+  },
+  {
+    "name": "ChatFilter",
+    "languages": [
+      "Java"
+    ],
+    "description": "A fast and highly configurable chat filter, targeted to be used in multiplayer games. Made for Craftathon, with benchmarking and full specifications available.",
+    "github": "https://github.com/RubbaBoy/ChatFilter"
+  },
+  {
+    "name": "EmojIDE",
+    "languages": [
+      "Java"
+    ],
+    "description": "A working and reactive IDE in Discord emojis, featuring emoji management across 41 Discord servers. This was made for the r/ProgrammerHumor Hackathon, getting second place.",
+    "github": "https://github.com/RubbaBoy/EmojIDE",
+    "website": "https://www.youtube.com/watch?v=06pMgnB6e6o"
+  },
+  {
+    "name": "BFJVM",
+    "languages": [
+      "Java"
+    ],
+    "description": "A program to compile Brainfuck into JVM classes without the use of any libraries or external tools for compiling.",
+    "github": "https://github.com/RubbaBoy/BFJVM"
+  },
+  {
+    "name": "Notedown",
+    "languages": [
+      "Dart"
+    ],
+    "description": "A markdown-based note taking app made in Flutter. Complete with Google authentication for cross-platform syncing.",
+    "github": "https://github.com/RubbaBoy/Notedown"
+  },
+  {
+    "name": "Spogit",
+    "languages": [
+      "Java"
+    ],
+    "description": "Spotify playlists over Git. This allows for pushing playlists to Git servers such as GitHub, and making forks and PRs to other people's playlists.",
+    "github": "https://github.com/RubbaBoy/Spogit"
+  },
+  {
+    "name": "BinaryCamera",
+    "languages": [
+      "Java"
+    ],
+    "description": "BinaryCamera's goal is to allow the user to type in their computer using nothing but their light. The binary is typed in by turning their light on/off as ones and zeros, recorded through their webcam.",
+    "github": "https://github.com/RubbaBoy/BinaryCamera",
+    "website": "https://www.youtube.com/watch?v=RxDjbndYzxo"
+  },
+  {
+    "name": "CodeFormatter",
+    "languages": [
+      "Java"
+    ],
+    "description": "Formats your code (Or whole GitHub repos) by moving all brackets and semicolons to the side in a perfect line to match your perfect code.",
+    "github": "https://github.com/RubbaBoy/CodeFormatter",
+    "website": "https://rubbaboy.me/codeformatter/"
+  },
+  {
+    "name": "WSS",
+    "languages": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "description": "Convert nested CSS into full webpages, with the ability to recreate any webpage in just CSS.",
+    "github": "https://github.com/RubbaBoy/WSS"
+  }
+]
