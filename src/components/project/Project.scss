@@ -20,8 +20,10 @@
         display: flex;
         align-items: center;
 
+        flex-wrap: wrap;
+
         h4 {
-            margin: 0 20px 0 0;
+            margin: 0 24px 0 0;
             display: inline-block;
 
             font-weight: bold;
@@ -32,8 +34,11 @@
         .languages {
             display: inline-flex;
 
+            width: 100%;
+            order: 2;
+
             .language {
-                color: colors.$title-muted;
+                color: colors.$pink-secondary;
                 font-size: 18px;
 
                 &:not(:last-child):after {
@@ -45,14 +50,23 @@
 
         .icon {
             margin-left: auto;
-            color: colors.$title-muted;
+            color: colors.$pink;
             transition: opacity 100ms ease-in, color 300ms ease-in;
             opacity: 0;
             cursor: pointer;
 
             &:hover {
                 transition: color 100ms ease-out;
-                color: colors.$light_blue;
+                color: colors.$pink-secondary;
+            }
+        }
+
+        @include mixins.tablet-landscape-up {
+            flex-wrap: nowrap;
+
+            .languages {
+                width: unset;
+                order: 0;
             }
         }
     }
@@ -66,5 +80,6 @@
 
     p {
         margin: 0;
+        color: colors.$project-body;
     }
 }

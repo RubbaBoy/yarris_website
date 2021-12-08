@@ -9,11 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
 
   background: colors.$dark_blue;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  padding: 0 24px;
 }
 
 p {
@@ -34,5 +30,6 @@ p {
   display: block;
   flex: 1 0 auto;
 
-  @include mixins.content-width;
+  width: 100%;
+  max-width: 800px;
 }

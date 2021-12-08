@@ -7,7 +7,7 @@
     h1 {
         font-size: 80px;
         color: #FFF;
-        margin: 25vh 0 0 0;
+        margin: 25vh 0 8px 0;
     }
 
     .icon-row {
@@ -24,11 +24,11 @@
         svg {
             width: 32px;
             height: 32px;
-            color: colors.$light_blue;
+            color: colors.$pink;
 
             &:hover {
                 transition: color 350ms ease-out;
-                color: colors.$pink;
+                color: colors.$pink-secondary;
             }
         }
     }

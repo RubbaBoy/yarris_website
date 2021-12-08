@@ -62,22 +62,24 @@ export default class App extends React.Component {
     render() {
         return (
             <div className="main-content-wrapper">
-                <Header/>
-                <div className="summary">
-                    <p>Hey! I'm Adam, a 19-year-old programmer and Eagle Scout from New Hampshire. I've been
-                        programming as a hobby for around 8 years, devoting nearly all of my time to development of
-                        software and tools, some being more serious than others.
-                        <br/>
-                        <br/>
-                        I am currently in my sophomore year at RIT pursuing Computer Science, working as a software developer at <a href="https://witr.rit.edu/" target="_blank">WITR</a>.
+                <div className="top-screen">
+                    <Header/>
+                    <div className="summary">
+                        <p>Hey! I'm Adam, a 19-year-old programmer and Eagle Scout from New Hampshire. I've been
+                            programming as a hobby for around 8 years, devoting nearly all of my time to development of
+                            software and tools, some being more serious than others.
+                            <br/>
+                            <br/>
+                            I am currently in my sophomore year at RIT pursuing Computer Science, working as a software developer at <a href="https://witr.rit.edu/" target="_blank">WITR</a>.
                         </p>
-                </div>
-                <div className="scroll-container">
-                    <svg className="arrows">
-                        <path className="a1" d="M0 0 L30 32 L60 0"/>
-                        <path className="a2" d="M0 20 L30 52 L60 20"/>
-                        <path className="a3" d="M0 40 L30 72 L60 40"/>
-                    </svg>
+                    </div>
+                    <div className="scroll-container">
+                        <svg className="arrows">
+                            <path className="a1" d="M0 0 L30 32 L60 0"/>
+                            <path className="a2" d="M0 20 L30 52 L60 20"/>
+                            <path className="a3" d="M0 40 L30 72 L60 40"/>
+                        </svg>
+                    </div>
                 </div>
                 <div ref={this.projectsRef} className="projects">
                     {this.projects.map((project) => <ProjectComponent project={project}/>)}

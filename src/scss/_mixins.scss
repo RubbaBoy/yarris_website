@@ -22,14 +22,3 @@
 @mixin large-desktop {
     @media (min-width: 1800px) { @content; }
 }
-
-$max-width: 800px;
-
-@mixin content-width {
-    width: 100%;
-    max-width: 100%;
-
-    @include desktop {
-        max-width: $max-width;
-    }
-}
