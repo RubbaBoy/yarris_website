@@ -46,8 +46,14 @@
         .icon {
             margin-left: auto;
             color: colors.$title-muted;
-            transition: opacity 100ms ease-in;
+            transition: opacity 100ms ease-in, color 300ms ease-in;
             opacity: 0;
+            cursor: pointer;
+
+            &:hover {
+                transition: color 100ms ease-out;
+                color: colors.$light_blue;
+            }
         }
     }
 

@@ -13,14 +13,22 @@
     .icon-row {
         display: flex;
         justify-content: center;
+        transition: color 300ms ease-in;
+
+        .icon {
+            &:not(:first-child), &:not(:last-child) {
+                margin: 0 32px;
+            }
+        }
 
         svg {
             width: 32px;
             height: 32px;
             color: colors.$light_blue;
 
-            &:not(:first-child), &:not(:last-child) {
-                margin: 0 32px;
+            &:hover {
+                transition: color 350ms ease-out;
+                color: colors.$pink;
             }
         }
     }
