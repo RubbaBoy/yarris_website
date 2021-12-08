@@ -1,6 +1,4 @@
 import React, {createRef, RefObject} from 'react';
-import {Route} from "react-router";
-import {Routes} from "react-router-dom";
 import Header from "./header/Header";
 import './App.scss'
 import ProjectComponent, {Project} from "./project/Project";
@@ -67,12 +65,12 @@ export default class App extends React.Component {
             <div className="main-content-wrapper">
                 <Header/>
                 <div className="summary">
-                    <p>Hey! I'm Adam Yarris, a 19-year-old programmer and Eagle Scout from New Hampshire. I've been
+                    <p>Hey! I'm Adam, a 19-year-old programmer and Eagle Scout from New Hampshire. I've been
                         programming as a hobby for around 8 years, devoting nearly all of my time to development of
                         software and tools, some being more serious than others.
                         <br/>
                         <br/>
-                        I currently work as a software developer at <a href="https://witr.rit.edu/">WITR</a>, remaking all website-related components of the radio station.
+                        I am currently in my sophomore year at RIT pursuing Computer Science, working as a software developer at <a href="https://witr.rit.edu/" target="_blank">WITR</a>.
                         </p>
                 </div>
                 <div className="scroll-container">
