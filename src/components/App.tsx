@@ -17,7 +17,7 @@ export default class App extends React.Component {
                 <div className="top-screen">
                     <Header/>
                     <div className="summary">
-                        <p>Hey! I'm Adam, a 19-year-old programmer and Eagle Scout from New Hampshire. I've been
+                        <p>Hey! I'm Adam, a 20-year-old programmer and Eagle Scout from New Hampshire. I've been
                             programming as a hobby for around 8 years, devoting nearly all of my time to development of
                             software and tools, some being more serious than others.
                             <br/>
@@ -70,7 +70,6 @@ export default class App extends React.Component {
         let arrows = this.arrowsRef?.current
         let top1 = arrows?.offsetTop ?? 0
         let top2 = arrows?.clientHeight ?? 0
-        console.log(top1 + " " + top2);
         window.scroll({
             top: top1 + top2,
             behavior: 'smooth'
